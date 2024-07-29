@@ -10,6 +10,8 @@ const ThemeToggleButton = () => {
           colorScheme={useColorModeValue('purple', 'orange')}
           icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
           onClick={toggleColorMode}
+          //toggleColorMode func assigned to onClick event of button. 
+          //Clicking the button will toggle the color mode.
         ></IconButton>
     )
 }
