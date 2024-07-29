@@ -23,7 +23,6 @@ const Logo = () =>{
 
     return (
         <Link href="/">
-            <a>
                 <LogoBox>
                     <Image src={footPrintImg} width={20} height={20} alt="logo"/>
                     <Text 
@@ -35,7 +34,6 @@ const Logo = () =>{
                         Huzeyfe Burak Arslan
                     </Text>
                 </LogoBox>
-            </a>
         </Link>
     )
 }
