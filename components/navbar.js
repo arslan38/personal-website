@@ -85,22 +85,18 @@ const Navbar = props => {
                                 aria-label="Options"
                             />
                             <MenuList>
-                            <MenuItem as={Link} href="/">
-                            About
-                            </MenuItem>
-                            <MenuItem as={Link} href="/works">
-                            Works
-                            </MenuItem>
-                            <MenuItem as={Link} href="/posts">
-                            Posts
-                            </MenuItem>
-                            <MenuItem
-                            as={Link}
-                            href="https://github.com/arslan38/personal-website"
-                            >
-                            View Source
-                            </MenuItem>
-                        </MenuList>
+                                <NextLink href="/" passHref>
+                                    <MenuItem as={Link}>About</MenuItem>
+                                </NextLink>
+                                <NextLink href="/works" passHref>
+                                    <MenuItem as={Link}>Works</MenuItem>
+                                </NextLink><NextLink href="/posts" passHref>
+                                    <MenuItem as={Link}>Posts</MenuItem>
+                                </NextLink>
+                                <NextLink href="https://github.com/arslan38/personal-website" passHref>
+                                    <MenuItem as={Link}>View Source</MenuItem>
+                                </NextLink>
+                            </MenuList>
                         </Menu>
                     </Box>
                 </Box>
